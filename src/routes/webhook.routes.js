@@ -4,5 +4,6 @@ const router = express.Router();
 
 
 router.post('/webhook', webhook.webhook);
+router.get('/', webhook.checkStatus);
 
 module.exports = router;

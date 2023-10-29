@@ -5,7 +5,7 @@ const routes = require('./src/routes')
 
 
 const app = express();
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 8080
 
 const fileUpload = require('express-fileupload')
 

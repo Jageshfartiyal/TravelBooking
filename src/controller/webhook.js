@@ -18,6 +18,13 @@ const webhook = async (req, res) => {
 };
 
 
+const checkStatus = async(req,res)=>{
+    const currentTimestamp = new Date().toUTCString();
+  res.status(200).json({ timestamp: currentTimestamp });
+}
+
+
 module.exports = {
-    webhook
+    webhook,
+    checkStatus
 }
