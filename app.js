@@ -17,7 +17,7 @@ app.use(fileUpload({
 // require("./db/connect_db.js");
 app.use(express.json())
 
-app.use(routes);
+app.use('/home',routes);
 
 
 app.listen(PORT,()=>{
